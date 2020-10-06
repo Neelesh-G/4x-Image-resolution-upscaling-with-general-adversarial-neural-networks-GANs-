@@ -1,2 +1,2 @@
 # Super-resolution.github.io
-super resolution srgans
+16x super resolution srgans
