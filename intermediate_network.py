@@ -60,7 +60,7 @@ class Generator(object):
         self.noise_shape = noise_shape
 
     def generator(self):
-       generator_model = load_model('./output/gen_model120.h5', custom_objects={'vgg_loss':vgg_loss})   
+       generator_model = load_model('./models/gen_model120.h5', custom_objects={'vgg_loss':vgg_loss})   
 	#generator_model = Model(inputs = gen_input, outputs = model)
        return generator_model
 
@@ -73,6 +73,6 @@ class Discriminator(object):
     
     def discriminator(self):
         
-        discriminator_model = load_model('./output/dis_model120.h5', custom_objects={'vgg_loss':vgg_loss}) 
+        discriminator_model = load_model('./models/dis_model120.h5', custom_objects={'vgg_loss':vgg_loss}) 
         
         return discriminator_model
