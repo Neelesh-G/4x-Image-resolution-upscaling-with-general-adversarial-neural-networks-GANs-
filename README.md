@@ -1,2 +1,2 @@
-# Super-resolution.github.io
-16x super resolution srgans
+# Super-resolution
+4x super resolution srgans
