@@ -102,7 +102,7 @@ def load_data(directory):
     return files
 
 
-files = load_data("./original25")
+files = load_data("upload your images directory here")#images ahould be 96 by 96.
 x_train = files[:500]
 x_test = files[600:900]
 #files2=load_data("./original11", ".png")
@@ -195,7 +195,7 @@ def plot_generated_images(epoch,generator, examples=3 , dim=(1, 3), figsize=(15,
     plt.axis('off')
     
     plt.tight_layout()
-    plt.savefig('output3/gan_generated_image_epoch_%d.png' % epoch)
+    plt.savefig('output/gan_generated_image_epoch_%d.png' % epoch)#create an output diretory 
     
 
 def train(epochs=1, batch_size=128):
@@ -250,8 +250,8 @@ def train(epochs=1, batch_size=128):
         if e == 1 or e % 5 == 0:
             plot_generated_images(e, generator)
         if e % 20 == 0:
-            generator.save('./output3/gen_model%d.h5' % e)
-            discriminator.save('./output3/dis_model%d.h5' % e)
-            gan.save('./output3/gan_model%d.h5' % e)
+            generator.save('./output/gen_model%d.h5' % e)
+            discriminator.save('./output/dis_model%d.h5' % e)
+            gan.save('./output/gan_model%d.h5' % e)
 
 train(300,4)
