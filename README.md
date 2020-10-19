@@ -17,6 +17,8 @@ The below image is the sample output for the 80th epoch.
 
 ![gan_generated_image_epoch_80](https://user-images.githubusercontent.com/72451756/95555155-fe878600-0a2e-11eb-8565-9d58ccdcc5af.png)
 
+For a 16x upscaling of resolution(if sufficient amount of ram is available) import the generator and discriminator from network2.py into train.py(Google cloud preffered)
+
 
 
 
